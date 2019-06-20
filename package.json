@@ -23,7 +23,7 @@
   "scripts": {
     "jss": "jss",
     "start": "scjss-verify-setup && npm-run-all --serial bootstrap:connected start:react start:watch-components",
-    "build": "npm-run-all --serial bootstrap:connected build:client build:server",
+    "build": "CI=true npm-run-all --serial bootstrap:connected build:client build:server",
     "scaffold": "node scripts/scaffold-component.js",
     "start:react": "node scripts/start.js",
     "start:proxy": "node scripts/disconnected-mode-proxy.js",
