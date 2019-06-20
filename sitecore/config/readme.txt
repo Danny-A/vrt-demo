@@ -1,0 +1,1 @@
+Remove folder from build flow weareyou.config moved to a solution
