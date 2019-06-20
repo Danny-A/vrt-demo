@@ -1,8 +1,7 @@
 language: node_js
 node_js:
   - "10.14.1"
-script:
-  - unset CI
+script: unset CI
 jobs:
   include:
     - stage: "Build"
