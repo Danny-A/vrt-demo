@@ -16,7 +16,6 @@ class Img extends Component {
 
   render() {
     const {
-      lazyload,
       className,
     } = this.props;
 
@@ -36,42 +35,10 @@ class Img extends Component {
 
     return (
       <picture>
-        {bigImage && bigImage.srcSet ? (
-          <source
-            data-srcset={
-              bigImage.srcSet.map(item => (
-                `${item.src} ${item.width}w`
-              ))
-            }
-            srcSet={!lazyload ? (
-              bigImage.srcSet.map(item => (
-                `${item.src} ${item.width}w`
-              ))
-            ) : ''}
-            media="(min-width: 61.25em)"
-          />
-        ) : null}
-
-        {smallImage && smallImage.srcSet ? (
-          <source
-            data-srcset={
-              smallImage.srcSet.map(item => (
-                `${item.src} ${item.width}w`
-              ))
-            }
-            srcSet={!lazyload ? (
-              smallImage.srcSet.map(item => (
-                `${item.src} ${item.width}w`
-              ))
-            ) : null}
-          />
-        ) : null}
-
         <img
           data-sizes="auto"
           className={`c-img  lazyload  ${className}`}
-          data-src={lazyload && bigImage ? bigImage.src : smallImage.src}
-          src={lazyload ? 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' : smallImage.src}
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           alt={smallImage.alt}
         />
       </picture>
@@ -82,13 +49,11 @@ class Img extends Component {
 Img.propTypes = {
   bigImage: PropTypes.objectOf(PropTypes.any),
   smallImage: PropTypes.objectOf(PropTypes.any),
-  lazyload: PropTypes.bool,
   className: PropTypes.string,
 };
 Img.defaultProps = {
   bigImage: null,
   smallImage: null,
-  lazyload: true,
   className: '',
 };
 
