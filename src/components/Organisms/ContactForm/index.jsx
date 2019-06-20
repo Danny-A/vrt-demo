@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { Component, Fragment } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import PropTypes from 'prop-types';
