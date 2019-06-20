@@ -1,0 +1,49 @@
+/*  =========================================================================
+    atoms.Theme
+    ========================================================================= */
+
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Backgrounds
+    ========================================================================= */
+
+.t-bg--black {
+  background-color: $black;
+}
+
+.t-bg--white {
+  background-color: $white;
+}
+
+.t-bg--gray-b {
+  background-color: $gray-b;
+}
+
+.t-bg--gray-e {
+  background-color: $gray-e;
+}
+
+.t-bg--brand-a {
+  background-color: $brand-a;
+}
+
+
+
+/*  Text color
+    ========================================================================= */
+
+.t-color--light {
+  color: $white;
+}
+
+.t-color--dark {
+  color: $black;
+}

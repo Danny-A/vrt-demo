@@ -1,0 +1,50 @@
+/*  =========================================================================
+    Generic.Toplevel
+    Describes toplevel styles such as HTML, body, etc.
+    ========================================================================= */
+
+/*  Module
+    Core module
+    ========================================================================= */
+
+html {
+  color: $white;
+
+  &.is-black {
+    background-color: $black;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.ReactCollapse--content {
+  padding-bottom: 1px;
+}
+
+hr {
+  background: $gray-c;
+  border: 0;
+  height: 1px;
+}
+
+button svg {
+  pointer-events: none;
+}
+
+figure {
+  margin: 0;
+}
+
+/*
+  Hides Sitecore Experience Editor markup,
+  if you run the app in connected mode while the Sitecore cookies
+  are set to edit mode.
+*/
+.scChromeData,
+.scpm { display: none !important; }

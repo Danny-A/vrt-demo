@@ -1,0 +1,119 @@
+{
+  "menuOpenLabel": "meer",
+  "menuCloseLabel": "sluiten",
+  "backButton": {
+    "field": {
+      "value": {
+        "text": "Homepage",
+        "href": "/"
+      }
+    }
+  },
+  "languageSelector": [
+    {
+      "guid": "0",
+      "field": {
+        "value": {
+          "text": "en",
+          "href": "/en"
+          }
+        },
+      "active" : true
+    },
+    {
+      "guid": "1",
+      "field": {
+        "value": {
+          "text": "nl",
+          "href": "/"
+        }
+      },
+      "active" : false
+    }
+  ],
+  "navigationBarItems": [
+    {
+      "guid": "0",
+      "field": {
+        "value": {
+          "text": "filosofie",
+          "href": "/filosofie/"
+        }
+      }
+    },
+    {
+      "guid": "1",
+      "field": {
+        "value": {
+          "text": "projecten",
+          "href": "projecten/"
+        }
+      }
+    },
+    {
+      "guid": "2",
+      "field": {
+        "value": {
+          "text": "expertise",
+          "href": "expertise/"
+        }
+      }
+    }
+  ],
+  "navigationItems": [
+    {
+      "guid": "0",
+      "field": {
+        "value": {
+          "text": "filosofie",
+          "href": "filosofie/"
+        }
+      }
+    },
+    {
+      "guid": "1",
+      "field": {
+        "value": {
+          "text": "projecten",
+          "href": "projecten/"
+        }
+      }
+    },
+    {
+      "guid": "2",
+      "field": {
+        "value": {
+          "text": "expertise",
+          "href": "expertise/"
+        }
+      }
+    },
+    {
+      "guid": "3",
+      "field": {
+        "value": {
+          "text": "vacatures",
+          "href": "vacatures/"
+        }
+      }
+    },
+    {
+      "guid": "4",
+      "field": {
+        "value": {
+          "text": "nieuws & blog",
+          "href": "blog/"
+        }
+      }
+    },
+    {
+      "guid": "5",
+      "field": {
+        "value": {
+          "text": "contact",
+          "href": "contact/"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+/*  =========================================================================
+    Generic.Typography
+    Describes typography
+    ========================================================================= */
+
+@font-face {
+  font-family: 'Relative';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('../assets/fonts/relative-book.woff2') format('woff2'),
+    url('../assets/fonts/relative-book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Relative';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('../assets/fonts/relative-book-italic.woff2') format('woff2'),
+    url('../assets/fonts/relative-book-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Relative';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url('../assets/fonts/relative-medium.woff2') format('woff2'),
+    url('../assets/fonts/relative-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Relative';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url('../assets/fonts/relative-bold.woff2') format('woff2'),
+    url('../assets/fonts/relative-bold.woff') format('woff');
+}
+
+:root {
+  font-family: $font-family-primary, sans-serif;
+  font-size: $blocss-base-font-size;
+  line-height: $blocss-line-height-ratio;
+  font-feature-settings: 'liga' on;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-variant-ligatures: common-ligatures;
+  font-weight: $font-weight-book;
+  text-rendering: optimizeLegibility;
+}
+
+@include blocss-media-query(desk) {
+  body {
+    font-size: $blocss-base-font-size-desk;
+    line-height: $blocss-line-height-ratio-desk;
+  }
+}

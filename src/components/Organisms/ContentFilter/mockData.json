@@ -1,0 +1,672 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "cards": [
+        {
+          "key": "06",
+          "guid": "06",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#0/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/162468/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/463870/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "07",
+          "guid": "07",
+          "cardType": "all case",
+          "title": {
+            "value": "Dit doen we voor opdrachtgevers uit verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#1/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/193/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/1895329/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "08",
+          "guid": "08",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#2/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/789734/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/2270935/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "09",
+          "guid": "09",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#3/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/463870/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/162468/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "010",
+          "guid": "010",
+          "cardType": "all whitepaper",
+          "title": {
+            "value": "Verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#4/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/1895329/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/193/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "011",
+          "guid": "011",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#5/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/2270935/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/789734/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cards": [
+        {
+          "key": "012",
+          "guid": "012",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#0/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/162468/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/463870/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "013",
+          "guid": "013",
+          "cardType": "all case",
+          "title": {
+            "value": "Dit doen we voor opdrachtgevers uit verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#1/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/193/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/1895329/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "014",
+          "guid": "014",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#2/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/789734/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/2270935/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "015",
+          "guid": "015",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#3/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/463870/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/162468/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "016",
+          "guid": "016",
+          "cardType": "all whitepaper",
+          "title": {
+            "value": "Verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#4/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/1895329/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/193/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "017",
+          "guid": "017",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#5/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/2270935/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/789734/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "cards": [
+        {
+          "key": "018",
+          "guid": "018",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#0/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/162468/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/463870/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "019",
+          "guid": "019",
+          "cardType": "all case",
+          "title": {
+            "value": "Dit doen we voor opdrachtgevers uit verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#1/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/193/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/1895329/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "020",
+          "guid": "020",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#2/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/789734/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/2270935/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "021",
+          "guid": "021",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#3/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/463870/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/162468/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "022",
+          "guid": "022",
+          "cardType": "all whitepaper",
+          "title": {
+            "value": "Verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#4/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/1895329/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/193/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "023",
+          "guid": "023",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#5/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/2270935/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/789734/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "cards": [
+        {
+          "key": "024",
+          "guid": "024",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#0/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/162468/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/463870/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "024",
+          "guid": "024",
+          "cardType": "all case",
+          "title": {
+            "value": "Dit doen we voor opdrachtgevers uit verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#1/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/193/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/1895329/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "025",
+          "guid": "025",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#2/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/789734/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/2270935/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "026",
+          "guid": "026",
+          "cardType": "all news",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#3/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/463870/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/162468/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "027",
+          "guid": "027",
+          "cardType": "all whitepaper",
+          "title": {
+            "value": "Verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#4/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/1895329/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/193/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        },
+        {
+          "key": "028",
+          "guid": "028",
+          "cardType": "all article",
+          "title": {
+            "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+          },
+          "date": {
+            "value": "27 oktober 2018"
+          },
+          "link": {
+            "value": {
+              "href": "/#5/",
+              "text": "Link to card"
+            }
+          },
+          "image": {
+            "src": "https://source.unsplash.com/collection/2270935/700x400/",
+            "alt": "alt text",
+            "srcSet": [
+              {
+                "src": "https://source.unsplash.com/collection/789734/500x250/",
+                "width": 800
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

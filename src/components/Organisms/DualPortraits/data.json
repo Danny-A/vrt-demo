@@ -1,0 +1,40 @@
+{
+  "anchor": "guid0",
+  "theme": "black",
+  "collapseTop": false,
+  "collapseBottom": false,
+  "textLeft": {
+    "value": "<p>Een korte beschrijving van een foto in fontsize 12 px in de 2e en 3e kolom.</p>"
+  },
+  "imageLeft": {
+    "src": "http://placehold.it/490x640?w=490",
+    "alt": "alt text",
+    "srcSet": [
+      {
+        "src": "http://placehold.it/490x640?w=490",
+        "width": 490
+      },
+      {
+        "src": "http://placehold.it/980x1280?w=980",
+        "width": 980
+      }
+    ]
+  },
+  "textRight": {
+    "value": "<p>Een korte beschrijving van een foto in fontsize 12 px in de 2e en 3e kolom.</p>"
+  },
+  "imageRight": {
+    "src": "http://placehold.it/490x640?w=490",
+    "alt": "alt text",
+    "srcSet": [
+      {
+        "src": "http://placehold.it/490x640?w=490",
+        "width": 490
+      },
+      {
+        "src": "http://placehold.it/980x1280?w=980",
+        "width": 980
+      }
+    ]
+  }
+}

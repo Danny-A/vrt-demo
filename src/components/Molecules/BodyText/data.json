@@ -1,0 +1,21 @@
+{
+  "theme": "white",
+  "collapseTop": false,
+  "collapseBottom": false,
+  "heading": {
+    "value": "samenwerken met de goudse"
+  },
+  "content": {
+    "value": "<p>Als digitaal strategisch partner staan wij De Goudse bij in een digitaal transformatieproces. Binnen de Goudse verzekeringen adviseren en werken we op verschillende niveaus binnen de organisatie. Op strategisch niveau zijn we continu bezig met de voortgang van de roadmap die we hebben opgesteld. Op tactisch niveau om de juiste briefings en mensen op de opdrachten te krijgen. Op dagdagelijks niveau om het digitale platform te beheren en onderhouden. Zo monitoren de online marketeers van We are you de statistieken van de website en sturen bij waar nodig is.</p><p>Voordat we aan de slag gaan maken we duidelijk wat we gaan doen en hoe we beoordelen wanneer we tevreden zijn met de resultaten. Dit doen we voor de korte - en lange termijn.</p>"
+  },
+  "description": {
+    "value": "<p>Een korte uitleg over de tekst in de eerste twee kolommen of laatste twee.</p>"
+  },
+  "link": {
+    "value": {
+      "text": "Twitter",
+      "href": "/#/",
+      "target": "_blank"
+    }
+  }
+}

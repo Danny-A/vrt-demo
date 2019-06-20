@@ -1,0 +1,16 @@
+/*  =========================================================================
+    Objects.Button-clean
+    Cleans up a default button
+    ========================================================================= */
+
+/*  Module
+    ========================================================================= */
+
+.o-button-clean {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: currentColor;
+  font: inherit;
+  padding: 0;
+}

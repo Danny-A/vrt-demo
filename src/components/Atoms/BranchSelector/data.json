@@ -1,0 +1,28 @@
+{
+ "branches": [
+  {
+    "id": "0",
+    "value": {
+      "text": "digital",
+      "href": "http://www.mangrove.com"
+    },
+    "active": true
+  },
+  {
+    "id": "1",
+    "value": {
+      "text": "optimizing results",
+      "href": "http://www.redhotminute.com"
+    },
+    "active": false
+  },
+  {
+    "id": "2",
+    "value": {
+      "text": "customer experience",
+      "href": "http://www.virtual-affairs.com"
+    },
+    "active": false
+  }
+ ]
+}

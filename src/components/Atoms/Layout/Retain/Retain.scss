@@ -1,0 +1,72 @@
+/*  =========================================================================
+    Atoms.Layout.Retain
+    ========================================================================= */
+
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+/*  Module
+    ========================================================================= */
+
+.o-retain {
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+
+  @include blocss-media-query(desk) {
+    padding-left: $blocss-space-large;
+    padding-right: $blocss-space-large;
+  }
+}
+
+
+
+/*  Modifiers
+    ========================================================================= */
+
+.o-retain--narrow {
+  @include blocss-media-query(lap) {
+    padding-left: 8.33%;
+    padding-right: 8.33%;
+  }
+}
+
+.o-retain--no-overflow {
+  overflow: hidden;
+}
+
+.o-retain--relative {
+  position: relative;
+}
+
+.o-retain--wide\@palm {
+  padding-left: 3.25%;
+  padding-right: 3.25%;
+}
+
+
+
+/*  Responsive
+    ========================================================================= */
+
+@include blocss-media-query(lap) {
+  .o-retain--wide\@palm {
+    padding-left: $blocss-space;
+    padding-right: $blocss-space;
+  }
+}
+
+@include blocss-media-query(desk) {
+  .o-retain--wide\@palm {
+    padding-left: $blocss-space-large;
+    padding-right: $blocss-space-large;
+  }
+}

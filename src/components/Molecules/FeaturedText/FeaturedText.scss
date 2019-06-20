@@ -1,0 +1,47 @@
+/*  =========================================================================
+    Molecules.AuthorBlock
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+        ========================================================================= */
+
+
+.c-author-image-details {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $delta;
+  font-size: $blocss-line-height-ratio-desk;
+
+  @include blocss-media-query(palm) {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: $alpha;
+  }
+}
+
+.c-author-image {
+  width: 114px;
+  height: 114px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.c-author-description {
+  display: flex;
+  flex-direction: column;
+  padding-top: $milli;
+  text-align: center;
+
+  @include blocss-media-query(palm) {
+    padding-left: $delta;
+  }
+}
+
+

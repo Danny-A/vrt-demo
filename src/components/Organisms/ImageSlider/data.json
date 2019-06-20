@@ -1,0 +1,49 @@
+{
+  "params": {
+    "anchor": "guid01imageslider",
+    "topBackground": "black",
+    "bottomBackground": "white"
+  },
+  "items": [
+    {
+      "src": "https://source.unsplash.com/collection/2148809/700x400/",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "https://source.unsplash.com/collection/2183135/500x250/",
+          "width": 800
+        }
+      ]
+    },
+    {
+      "src": "https://source.unsplash.com/collection/187/700x400/",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "https://source.unsplash.com/collection/2148809/500x250/",
+          "width": 800
+        }
+      ]
+    },
+    {
+      "src": "https://source.unsplash.com/collection/1767181/700x400",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "https://source.unsplash.com/collection/187/500x250/",
+          "width": 800
+        }
+      ]
+    },
+    {
+      "src": "https://source.unsplash.com/collection/2183135/700x400/",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "https://source.unsplash.com/collection/1767181/500x250/",
+          "width": 800
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "cardType": "case",
+  "displayType": "regular",
+  "showMoreLabel": "Lees projecten",
+  "title": {
+    "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+  },
+  "date": {
+    "value": "27 oktober 2018"
+  },
+  "venue": {
+    "value": "amsterdam"
+  },
+  "link": {
+    "value": {
+      "href": "/#0/",
+      "text": "Link to card"
+    }
+  },
+  "image": {
+    "src": "https://source.unsplash.com/collection/2148809/700x400/",
+    "alt": "alt text",
+    "srcSet": [
+      {
+        "src": "https://source.unsplash.com/collection/2183135/500x250/",
+        "width": 800
+      }
+    ]
+  }
+}

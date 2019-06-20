@@ -1,0 +1,61 @@
+/*  =========================================================================
+    Atoms.Heading
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Headings
+    1. Smaller headings are NOT bold, for legibility
+    ========================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.u-heading {
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  position: relative;
+  white-space: pre-line;
+
+  > a {
+    color: inherit;
+    text-decoration: none;
+
+    #{$global-interaction-states} {
+      text-decoration: underline;
+    }
+  }
+}
+
+h5,
+h6 {
+  font-weight: $font-weight-medium; /* [1] */
+}
+
+/*  Utilities
+    ========================================================================= */
+
+.u-cropped-heading {
+  @include text-crop(1.16);
+}
+
+.c-heading__subtext {
+  position: absolute;
+  top: -5px;
+  transform: translateX(75%);
+}
+
+/*  Secondary heading
+    ========================================================================= */
+
+.u-heading--secondary {
+  font-weight: $font-weight-medium;
+}

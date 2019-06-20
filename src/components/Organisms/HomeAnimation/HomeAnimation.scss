@@ -1,0 +1,193 @@
+/*  =========================================================================
+    organisms.HomeAnimation
+    ========================================================================= */
+
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-homepage {
+  //
+}
+
+
+/*  Elements
+    ========================================================================= */
+
+.c-homepage__step {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.c-homepage__container {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(80px);
+  transition-property: opacity, transform;
+  transition-duration: $base-transition-duration;
+  transition-timing-function: ease-out;
+
+  @include blocss-media-query(desk) {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  &.is-active {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.c-homepage__text {
+  line-height: 1.4;
+  white-space: normal;
+
+  a {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    text-decoration: none;
+
+    @include blocss-media-query(desk) {
+      background: none;
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        background-color: $black;
+        bottom: 0;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 2px;
+        overflow: hidden;
+        position: absolute;
+        transform: scaleX(100%);
+        transform-origin: left;
+        transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    }
+
+    #{$global-interaction-states} {
+      text-decoration: none;
+
+      @include blocss-media-query(desk) {
+        &::before {
+          transform: scaleX(0);
+          transform-origin: right;
+        }
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    display: inline;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.t-color--dark {
+  .c-homepage__text {
+    a {
+      color: $black;
+
+      &::before {
+        background-color: $black;
+      }
+
+      #{$global-interaction-states} {
+        color: $black;
+      }
+    }
+  }
+}
+
+.c-homepage__skip {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  right: 30px;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  top: 80vh;
+  z-index: 5;
+
+  @include blocss-media-query(lap) {
+    right: 56px;
+    top: 90vh;
+  }
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.c-homepage__skip-button {
+  background-color: $white;
+  border-radius: 37px;
+  cursor: pointer;
+  padding-top: calc(#{blocss-value-to-em(7px)} - #{1px});
+  padding-bottom: calc(#{blocss-value-to-em(13px)} - #{1px});
+  padding-right: calc(#{blocss-value-to-em(34px)} - #{1px});
+  padding-left: calc(#{blocss-value-to-em(34px)} - #{1px});
+  position: relative;
+  transition-property: background-color, border-radius;
+  transition-duration: $base-transition-duration-short;
+  transition-timing-function: 0.45s;
+
+  &:hover {
+    background-color: $brand-c;
+    border-radius: 0;
+  }
+}
+
+.c-homepage__skip-title {
+  font-size: $nano;
+}
+
+.c-homepage__progress {
+  background-color: rgba($black, 0.25);
+  display: block;
+  width: 100%;
+}
+
+.c-homepage__progress-bar {
+  background-color: $black;
+  display: block;
+  height: 2px;
+  transition: 14s linear;
+  transition-property: width;
+  width: 0;
+
+  &.is-active {
+    width: 100%;
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "params": {
+    "anchor": "guid01projectslider",
+    "collapseTop": false,
+    "collapseBottom": false
+  },
+  "heading": {
+    "value": "Recent werk"
+  },
+  "items": [
+    {
+      "guid": "0",
+      "title": {
+        "value": "Efteling"
+      },
+      "link": {
+        "value": {
+          "text": "Efteling",
+          "href": "#0"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/2148809/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/2183135/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "1",
+      "title": {
+        "value": "VVV Zeeland"
+      },
+      "link": {
+        "value": {
+          "text": "VVV Zeeland",
+          "href": "#1"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/187/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/2148809/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "2",
+      "title": {
+        "value": "Van Lanschot"
+      },
+      "link": {
+        "value": {
+          "text": "Van Lanschot",
+          "href": "#2"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/1767181/700x400",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/187/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "3",
+      "title": {
+        "value": "De Goudse Verzekeringen"
+      },
+      "link": {
+        "value": {
+          "text": "De Goudse Verzekeringen",
+          "href": "#3"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/2183135/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/1767181/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    }
+  ]
+}

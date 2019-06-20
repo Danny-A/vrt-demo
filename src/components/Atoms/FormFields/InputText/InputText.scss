@@ -1,0 +1,76 @@
+/*  =========================================================================
+    Atoms.FormFields.InputText
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-input-text {
+  position: relative;
+
+  input {
+    appearance: none;
+    background-color: transparent;
+    border-color: $black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    font-family: $font-family-primary;
+    font-size: $milli;
+    line-height: 30px;
+    padding-bottom: 4px;
+    transition-property: box-shadow, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 2px 0 0 $black;
+    }
+  }
+}
+
+.c-input-text__message {
+  background-color: $error-a;
+  color: $white;
+  display: flex;
+  font-weight: $font-weight-bold;
+  padding: 10px 15px;
+  position: absolute;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  width: 100%;
+}
+
+.c-input-text__message-label {
+  margin-left: $blocss-space-small;
+}
+
+
+/*  Modifier
+    ========================================================================= */
+
+.c-input-text--has-error {
+  input {
+    color: $error-a;
+    border-color: $error-a;
+  }
+}
+
+
+.c-input-text--move-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.c-input-text--move-enter-done {
+  opacity: 1;
+  transform: translateY(0);
+}

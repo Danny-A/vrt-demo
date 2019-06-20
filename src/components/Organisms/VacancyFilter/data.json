@@ -1,0 +1,226 @@
+{
+  "heading": {
+    "value": "vacatures &amp; stages"
+  },
+  "noResultsText": "Sorry. Geen resultaten.",
+  "loadMoreButtonText": {
+    "value": "Meer tonen"
+  },
+  "filters":{
+    "types":{
+       "name":"Typez",
+       "allLabel":"All Typez",
+       "facets":[
+          {
+             "id":"85d39af1-c45e-410b-b9c5-eb41da46583d",
+             "name":"developer",
+             "count":2
+          },
+          {
+             "id":"915588c2-048b-4eeb-af35-18eb258bde10",
+             "name":"marketer",
+             "count":0
+          }
+       ]
+    },
+    "locations":{
+       "name":"Locationz",
+       "allLabel":"All Locationz",
+       "facets":[
+          {
+             "id":"0efdfcc4-7c51-4364-bf31-14417546bbf1",
+             "name":"Rotterdam",
+             "count":2
+          },
+          {
+             "id":"6e35a179-d8d6-4113-8edb-84ac120434f2",
+             "name":"Den Bosch",
+             "count":0
+          }
+       ]
+    }
+ },
+  "vacancies": [
+    {
+      "id": "eaf5c7ac-086e-4839-bf2f-a703d99c7131",
+      "typeId": "85d39af1-c45e-410b-b9c5-eb41da46583d",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Senior UX Developer 1",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7132",
+      "typeId": "85d39af1-c45e-410b-b9c5-eb41da46583d",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Junior UX Developer 2",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7133",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Junior UX Marketer 3",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7134",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "6e35a179-d8d6-4113-8edb-84ac120434f2",
+      "title": "Junior UX Marketer 4",
+      "subtitle": "Den Bosch, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7135",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "6e35a179-d8d6-4113-8edb-84ac120434f2",
+      "title": "Junior UX Marketer 5",
+      "subtitle": "Den Bosch, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "eaf5c7ac-086e-4839-bf2f-a703d99c7136",
+      "typeId": "85d39af1-c45e-410b-b9c5-eb41da46583d",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Senior UX Developer 6",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7137",
+      "typeId": "85d39af1-c45e-410b-b9c5-eb41da46583d",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Junior UX Developer 7",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7138",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Junior UX Marketer 8",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7139",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "6e35a179-d8d6-4113-8edb-84ac120434f2",
+      "title": "Junior UX Marketer 9",
+      "subtitle": "Den Bosch, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7140",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "6e35a179-d8d6-4113-8edb-84ac120434f2",
+      "title": "Junior UX Marketer 10",
+      "subtitle": "Den Bosch, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "eaf5c7ac-086e-4839-bf2f-a703d99c7141",
+      "typeId": "85d39af1-c45e-410b-b9c5-eb41da46583d",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Senior UX Developer 11",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7142",
+      "typeId": "85d39af1-c45e-410b-b9c5-eb41da46583d",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Junior UX Developer 12",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7143",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "0efdfcc4-7c51-4364-bf31-14417546bbf1",
+      "title": "Junior UX Marketer 13",
+      "subtitle": "Rotterdam, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7144",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "6e35a179-d8d6-4113-8edb-84ac120434f2",
+      "title": "Junior UX Marketer 14",
+      "subtitle": "Den Bosch, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    },
+    {
+      "id": "faf5c7ac-086e-4839-bf2f-a703d99c7145",
+      "typeId": "915588c2-048b-4eeb-af35-18eb258bde10",
+      "locationId": "6e35a179-d8d6-4113-8edb-84ac120434f2",
+      "title": "Junior UX Marketer 15",
+      "subtitle": "Den Bosch, 32/40 uur, hbo+",
+      "link": {
+        "value": {
+          "href": "#"
+        }
+      }
+    }
+  ],
+  "total": 1
+}

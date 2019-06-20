@@ -1,0 +1,93 @@
+/*  =========================================================================
+    organisms.Footer
+========================================================================= */
+
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+/*  Module
+    ========================================================================= */
+
+.c-footer {
+  // empty for reference
+}
+
+
+/*  Element
+    ========================================================================= */
+
+.c-footer__text {
+  line-height: 1.4;
+}
+
+.c-footer__social-icons {
+  ul {
+    display: flex;
+  }
+
+  li + li {
+    margin-left: 16px;
+  }
+}
+
+.c-footer__links {
+  nav {
+    @include blocss-media-query(lap) {
+      display: flex;
+    }
+
+    &:hover .c-footer__link {
+      opacity: 0.7;
+    }
+
+    .c-footer__link {
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    a:first-child {
+      @include blocss-media-query(lap) {
+        padding-left: 0;
+      }
+    }
+
+    a:last-child {
+      @include blocss-media-query(lap) {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.c-footer__link {
+  display: block;
+  font-weight: $font-weight-book;
+  transition-duration: 0.375s;
+  transition-property: opacity;
+
+  @include blocss-media-query(lap) {
+    padding: 0 24px;
+  }
+
+  @include blocss-media-query(desk) {
+    padding: 0 40px;
+  }
+}
+
+/*  Theming
+    ========================================================================= */
+
+.t-color--light {
+  .c-footer__link {
+    &:hover {
+      color: $white;
+    }
+  }
+}

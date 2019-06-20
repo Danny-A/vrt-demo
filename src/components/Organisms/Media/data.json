@@ -1,0 +1,53 @@
+{
+  "anchor": "guid0",
+  "topBackground": "gray-b",
+  "bottomBackground": "white",
+  "isNarrow": false,
+  "youtubeId": "LjhCEhWiKXk",
+  "vimeoId": "57766800",
+  "playVideoText": {
+    "value": "speel video"
+  },
+  "videoDuration": {
+    "value": "0:30"
+  },
+  "image": {
+    "src": "http://placehold.it/750x422/333333/888888?w=750&text=750fbl",
+    "alt": "alt text",
+    "srcSet": [
+      {
+        "src": "http://placehold.it/750x422/333333/888888?w=750&text=750l",
+        "width": 750
+      },
+      {
+        "src": "http://placehold.it/1536x864/333333/888888?w=1536&text=1536l",
+        "width": 1536
+      },
+      {
+        "src": "http://placehold.it/1920x1080/333333/888888?w=1920&text=1920l",
+        "width": 1920
+      }
+    ]
+  },
+  "smallImageIfNoVideo": {
+    "src": "http://placehold.it/750x750/333333/888888?w=750&text=750fbs",
+    "alt": "alt text",
+    "srcSet": [
+      {
+        "src": "http://placehold.it/750x563/333333/888888?w=750&text=750s",
+        "width": 750
+      },
+      {
+        "src": "http://placehold.it/1536x1152/333333/888888?w=1536&text=1536s",
+        "width": 1536
+      },
+      {
+        "src": "http://placehold.it/1920x1440/333333/888888?w=1920&text=1920s",
+        "width": 1920
+      }
+    ]
+  },
+  "description": {
+    "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur blanditiis culpa.</p>"
+  }
+}

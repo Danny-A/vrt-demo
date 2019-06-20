@@ -1,0 +1,130 @@
+/*  =========================================================================
+    Link Highlight
+    ========================================================================= */
+
+/*  Engine
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    1. This takes the space of Layer into account
+    ========================================================================= */
+
+.c-highlight {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px * 4 - $blocss-space; /* [1] */
+}
+
+
+
+/*  Elements
+    ========================================================================= */
+
+.c-highlight__bottom {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.c-highlight__top {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.c-highlight__item {
+  display: block;
+  overflow: hidden;
+  padding: 40px * 2 40px 40px - $blocss-space;
+  position: relative;
+
+  &::before {
+    border-radius: 100%;
+    bottom: -300px;
+    content: '';
+    height: 300px;
+    opacity: 0;
+    position: absolute;
+    right: -300px;
+    transform: scale(0);
+    transition-property: opacity transform;
+    transition-duration: 0.45s;
+    transition-timing-function: ease-in;
+    width: 300px;
+    z-index: 0;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+      transform: scale(6);
+    }
+  }
+}
+
+.c-highlight__heading {
+  min-height: 3em;
+  margin-bottom: $blocss-space;
+}
+
+
+
+/*  Responsive
+    ========================================================================= */
+
+@include blocss-media-query(lap) {
+  .c-highlight {
+    grid-template-rows: 1fr 40px * 8 - $blocss-space; /* [1] */
+  }
+
+  .c-highlight__heading {
+    min-height: 4em;
+  }
+}
+
+@include blocss-media-query(desk) {
+  .c-highlight__item {
+    padding: 40px * 3 40px * 2 40px;
+  }
+
+  .c-highlight__heading {
+    min-height: 6em;
+  }
+}
+
+@include blocss-media-query(wall) {
+  .c-highlight__heading {
+    min-height: 4em;
+  }
+}
+
+/*  Theming
+    ========================================================================= */
+
+.t-bg--brand-a {
+  .c-highlight__item {
+    color: $black;
+
+    &:hover {
+      color: $white;
+
+      &::before {
+        background-color: $gray-e;
+      }
+    }
+  }
+}
+
+.t-bg--gray-e {
+  .c-highlight__item {
+    &:hover {
+      color: $black;
+
+      &::before {
+        background-color: $brand-a;
+      }
+    }
+  }
+}

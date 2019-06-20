@@ -1,0 +1,54 @@
+/*  =========================================================================
+    Generic.Mixins.Text-crop
+    ========================================================================= */
+
+
+/*  Mixins
+    // Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=custom-font&typeface=Lato&custom-typeface-name=Relative&custom-typeface-url=http%3A%2F%2Fwww.designzo.nl%2Frelativebold.woff2&custom-typeface-weight=700&custom-typeface-style=bold&weight-and-style=300&size=72&line-height=1&top-crop=26&bottom-crop=10
+    ========================================================================= */
+
+@mixin text-crop($line-height: 1, $top-adjustment: 0, $bottom-adjustment: 0) {
+  // Configured in Step 1
+  $top-crop: 26;
+  $bottom-crop: 10;
+  $crop-font-size: 72;
+  $crop-line-height: 1;
+
+  // Apply values to calculate em-based margins that work with any font size
+  $dynamic-top-crop: max(($top-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+  $dynamic-bottom-crop: max(($bottom-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+
+  // Mixin output
+  line-height: $line-height;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    margin-bottom: calc(-#{$dynamic-top-crop}em + #{$top-adjustment}px);
+    width: 0;
+  }
+}
+
+
+
+/* Usage Examples
+    .my-body-copy-class {
+        @include text-crop($line-height: 2); // Larger line height desired, set the line height via the mixin
+        font-size: 16px;
+    }
+
+    // Sometimes depending on the font-size, the rendering, the browser, etc. you may need to tweak the output.
+    // You can adjust the top and bottom cropping when invoking the component using the $top-adjustment and $bottom-adjustment settings
+
+    .slight-adjustment-needed {
+        @include text-crop($top-adjustment: -0.5px, $bottom-adjustment: 2px);
+        font-size: 17px;
+    }
+
+    .dont-do-this {
+        @include text-crop;
+        font-size: 16px;
+        line-height: 3; // DO NOT set line height outside of the mixin, the mixin needs the line height value to calculate the crop correctly
+    }
+*/

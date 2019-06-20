@@ -1,0 +1,28 @@
+{
+  "anchor": "linkHighlighId",
+  "topBackground": "gray-b",
+  "bottomBackground": "white",
+  "title": {
+    "value": "overkoepelende thematieken"
+  },
+  "linkLeft": {
+    "value": {
+      "text": "Left (not used)",
+      "href": "#leftlink",
+      "target": ""
+    }
+  },
+  "textLeft": {
+    "value": "Verhogen van selfservice en het reduceren van kosten"
+  },
+  "linkRight": {
+    "value": {
+      "text": "Right (not used)",
+      "href": "#rightlink",
+      "target": ""
+    }
+  },
+  "textRight": {
+    "value": "Flexibele en schaalbare technologie wat klaar is voor de toekomst"
+  }
+}

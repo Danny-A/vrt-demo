@@ -1,0 +1,32 @@
+/*  =========================================================================
+    way.closing
+    This is the projects closing file. It will be put at the bottom of the
+    generated stylesheet after all the components. This is the place where
+    generic utilities will be included.
+    ========================================================================= */
+
+/*  Engine
+    Includes the projects engine file, contains all foundation variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'engine.scss';
+
+
+
+/*  Utilities
+    ========================================================================= */
+
+@import '~blocss/lib/utilities/fractions';
+
+@import '~blocss/lib/utilities/visually-hidden';
+
+@import '~blocss/lib/utilities/module';
+
+@import 'utilities/typography.sizes';
+
+@import 'utilities/typography.text';
+
+@import 'utilities/layout.spacing';
+
+@import 'utilities/layout.display';

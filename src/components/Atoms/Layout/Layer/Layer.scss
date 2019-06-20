@@ -1,0 +1,84 @@
+/*  =========================================================================
+    atoms.Layout.Layer
+    Layer are page-wide blocks that wrap all content.
+========================================================================= */
+
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+/*  Module
+    ========================================================================= */
+
+.o-layer {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/*  Sizes
+    Padding on the bottom lacks the standard margin height elements have so
+    it will fill up just right
+    ========================================================================= */
+
+.o-layer--small {
+  padding-top: 40px;
+  padding-bottom: 40px - $blocss-space;
+}
+
+.o-layer--medium {
+  padding-top: 40px * 2;
+  padding-bottom: 40px * 2 - $blocss-space;
+}
+
+.o-layer--large {
+  padding-top: 40px * 2;
+  padding-bottom: 40px * 2 - $blocss-space;
+
+  @include blocss-media-query(lap) {
+    padding-top: (40px * 4);
+    padding-bottom: (40px * 4) - $blocss-space;
+  }
+}
+
+.o-layer--huge {
+  padding-top: 40px * 4;
+  padding-bottom: 40px * 2 - $blocss-space;
+
+  @include blocss-media-query(desk) {
+    padding-top: 40px * 5;
+    padding-bottom: (40px * 5) - $blocss-space;
+  }
+}
+
+.o-layer--huge-header {
+  padding-top: 40px * 4;
+  padding-bottom: 40px * 2 - $blocss-space;
+
+  @include blocss-media-query(desk) {
+    padding-top: 40px * 6;
+    padding-bottom: (40px * 4) - $blocss-space;
+  }
+}
+
+
+
+/*  Collapse
+    ========================================================================= */
+
+.o-layer--collapse-bottom {
+  padding-bottom: 0;
+}
+
+.o-layer--collapse-top {
+  padding-top: 0;
+}

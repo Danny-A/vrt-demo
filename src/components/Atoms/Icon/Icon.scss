@@ -1,0 +1,89 @@
+/*  =========================================================================
+    Atoms.Icon
+    Icon system based on svg sprites
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+$icon-base-size: 24px !default;
+
+
+/*  Module
+    ========================================================================= */
+
+.c-icon {
+  display: block;
+  fill: currentColor;
+  position: relative;
+  height: $icon-base-size;
+  transition: transform $base-transition-duration-short cubic-bezier(0.5, 0, 0, 1);
+  width: $icon-base-size;
+}
+
+
+
+/*  Modifiers
+    ========================================================================= */
+
+.c-icon--inherit {
+  width: 1em;
+  height: 1em;
+}
+
+.c-icon--inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/**
+  * Sizes
+  */
+
+.c-icon--alpha {
+  width: $alpha;
+  height: $alpha;
+}
+
+.c-icon--beta {
+  width: $beta;
+  height: $beta;
+}
+
+.c-icon--gamma {
+  width: $gamma;
+  height: $gamma;
+}
+
+.c-icon--delta {
+  width: $delta;
+  height: $delta;
+}
+
+.c-icon--epsilon {
+  width: $epsilon;
+  height: $epsilon;
+}
+
+.c-icon--logo {
+  width: 30px;
+  height: 48px;
+}
+
+
+
+/**
+Rotated icons
+ */
+
+.c-icon--rotate-180 {
+  transform: rotate(180deg);
+}

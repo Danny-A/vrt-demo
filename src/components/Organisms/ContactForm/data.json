@@ -1,0 +1,56 @@
+{
+  "id": "e6cd9ce6-7c0e-432b-bb54-f5b4917057f0",
+  "apiUrl": "/api/contact/send",
+  "defaultContactData": {
+    "id": "455dde99-eb58-4cb8-854d-04c6b5b823cc",
+    "sectorName": "algemeen",
+    "phoneNumber": "0123456789",
+    "emailAddress": "info@weareyou.com"
+  },
+  "sectors": [
+    {
+      "id": "455dde99-eb58-4cb8-854d-04c6b5b823cc",
+      "sectorName": "algemeen",
+      "phoneNumber": "0123456789",
+      "emailAddress": "info@weareyou.com"
+    },
+    {
+      "id": "ae9d121e-d5c3-42be-b7fb-f58c4cc97563",
+      "sectorName": "automotive",
+      "phoneNumber": "0123456789",
+      "emailAddress": "automotive@weareyou.com"
+    },
+    {
+      "id": "15aacd99-1d00-4bbc-8afb-75cd1e905027",
+      "sectorName": "finance",
+      "phoneNumber": "020342004233",
+      "emailAddress": "finance@weareyou.com"
+    }
+  ],
+  "heading": {
+    "value": "we<br/> make<br/> contact"
+  },
+  "sectorTitle": {
+    "value": "onderwerp"
+  },
+  "phoneTitle": {
+    "value": "telefoonnummer"
+  },
+  "emailTitle": {
+    "value": "email"
+  },
+  "nameField": {
+    "value": "uw naam"
+  },
+  "emailField": {
+    "value": "uw e-mail"
+  },
+  "messageField": {
+    "value": "uw vraag of opmerking"
+  },
+  "sendButtonText": "verstuur",
+  "emailErrorMessage": "Vul een geldig e-mailadres in",
+  "successMessage": "verstuurd",
+  "errorMessage": "versturen mislukt",
+  "token": "swgFONbnvzOI6Fp14FONu4HOVWIjw_UY9c28zAytdYqVUWtMas8m8whDAWGgMDHp6agK5OO5Xd_ck5ylihtrspLP34LDV9d4LUWrRxLcjbM1:wQcybq-Fw-WbubGbOvIiss0FZfnanLhqWe6ohkNChMkpQdVqNncgQPn8_9dMsZWxHEhgmwVFOVQgtXzQUQ9eCopgdfYNztW-TNO-Tr8qzIQ1"
+}

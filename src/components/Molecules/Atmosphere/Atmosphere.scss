@@ -1,0 +1,99 @@
+/*  =========================================================================
+    Molecules.Atmosphere
+    ========================================================================= */
+
+/*  Engine
+========================================================================= */
+
+@import 'sass/engine.scss';
+
+/*  Module
+    ========================================================================= */
+
+.c-atmosphere {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 40px * 2;
+
+  @include blocss-media-query(lap) {
+    grid-template-rows: 2fr 40px * 5;
+  }
+}
+
+/*  Elements
+    ========================================================================= */
+
+.c-atmosphere__top {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+.c-atmosphere__outer {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.c-atmosphere__inner {
+  @include blocss-media-query(lap) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.c-atmosphere__picture {
+  display: none;
+  margin-top: 1px;
+  position: relative;
+
+  @include blocss-media-query(lap) {
+    flex: 0 1 50%;
+  }
+
+  @include blocss-media-query(desk) {
+    flex: 0 1 25%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  &:nth-child(-n+3) {
+    display: block;
+  }
+
+  @include blocss-media-query(lap) {
+    margin-top: 0;
+
+    &:nth-child(-n+4) {
+      display: block;
+    }
+
+    &:nth-child(n+3) {
+      margin-top: 1px;
+    }
+  }
+
+  @include blocss-media-query(desk) {
+    margin-top: 0;
+
+    &:nth-child(-n+8) {
+      display: block;
+    }
+
+    &:nth-child(n+3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n+5) {
+      margin-top: 1px;
+    }
+  }
+}
+
+.c-atmosphere__picture--has-link {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,200 @@
+{
+  "heading": {
+    "value":  "we<br/> bring<br/> news"
+  },
+  "typeFilters": [
+    {
+      "filterType": "all",
+      "filterTitle": "alle"
+    },
+    {
+      "filterType": "article",
+      "filterTitle": "artikelen"
+    },
+    {
+      "filterType": "news",
+      "filterTitle": "nieuws"
+    },
+    {
+      "filterType": "case",
+      "filterTitle": "cases"
+    },
+    {
+      "filterType": "whitepaper",
+      "filterTitle": "whitepapers"
+    }
+  ],
+  "showMore": "Laad meer",
+  "noMoreCards": "Er is niet meer...",
+  "cardUrl": "http://localhost:3000/items/",
+  "cards": [
+    {
+      "guid": "00",
+      "cardType": "article",
+      "displayType": "regular",
+      "showMoreLabel": "Lees news",
+      "title": {
+        "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+      },
+      "date": {
+        "value": "27 oktober 2018"
+      },
+      "link": {
+        "value": {
+          "href": "/#0/",
+          "text": "Link to card"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/162468/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/463870/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "01",
+      "cardType": "case",
+      "displayType": "highlighted",
+      "showMoreLabel": "Lees projecten",
+      "title": {
+        "value": "we're looking for a senior UX designer"
+      },
+      "date": {
+        "value": "27 oktober 2018"
+      },
+      "link": {
+        "value": {
+          "href": "/#1/",
+          "text": "Link to card"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/193/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/1895329/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "02",
+      "cardType": "article",
+      "displayType": "header",
+      "showMoreLabel": "Lees artikelen",
+      "title": {
+        "value": "digital agency Estate joins the We are you family"
+      },
+      "date": {
+        "value": "27 oktober 2018"
+      },
+      "link": {
+        "value": {
+          "href": "/#2/",
+          "text": "Link to card"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/789734/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/2270935/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "03",
+      "cardType": "news",
+      "displayType": "regular",
+      "showMoreLabel": "Lees news",
+      "title": {
+        "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+      },
+      "date": {
+        "value": "27 oktober 2018"
+      },
+      "link": {
+        "value": {
+          "href": "/#3/",
+          "text": "Link to card"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/463870/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/162468/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "04",
+      "cardType": "whitepaper",
+      "displayType": "regular",
+      "showMoreLabel": "Lees whitepaper",
+      "title": {
+        "value": "Verschillende sectoren zoals leisure, automotive, finance, utility en insurance."
+      },
+      "date": {
+        "value": "27 oktober 2018"
+      },
+      "link": {
+        "value": {
+          "href": "/#4/",
+          "text": "Link to card"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/1895329/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/193/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    },
+    {
+      "guid": "05",
+      "cardType": "article",
+      "displayType": "regular",
+      "showMoreLabel": "Lees artikelen",
+      "title": {
+        "value": "Meer uit je klantdata halen om binnen leisure te excelleren."
+      },
+      "date": {
+        "value": "27 oktober 2018"
+      },
+      "link": {
+        "value": {
+          "href": "/#5/",
+          "text": "Link to card"
+        }
+      },
+      "image": {
+        "src": "https://source.unsplash.com/collection/2270935/700x400/",
+        "alt": "alt text",
+        "srcSet": [
+          {
+            "src": "https://source.unsplash.com/collection/789734/500x250/",
+            "width": 800
+          }
+        ]
+      }
+    }
+  ]
+}

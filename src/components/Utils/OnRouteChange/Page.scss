@@ -1,0 +1,90 @@
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+/*  =========================================================================
+    Module
+    ========================================================================= */
+
+.o-page {
+  min-height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: width;
+  z-index: 1;
+
+  &::after {
+    background-color: $white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.01%;
+    z-index: 100;
+  }
+
+  &.page-appear,
+  &.page-enter {
+    width: 100%;
+  }
+
+  &.page-appear-active,
+  &.page-enter-active {
+    position: fixed;
+    overflow: hidden;
+
+    &::after {
+      transform: translateX(0);
+      width: 100%;
+    }
+  }
+
+  &.page-enter-done,
+  &.page-appear-done {
+    &::after {
+      transition: transform 590ms ease-out;
+      transform: translateX(100%);
+      width: 100%;
+    }
+  }
+
+  &.page-exit {
+    &::after {
+      width: 0.01%;
+    }
+  }
+
+  &.page-exit-active {
+    transition: width 590ms ease-in-out;
+    width: 100%;
+
+    &::after {
+      transition: width 590ms ease-in-out;
+      width: 100%;
+    }
+  }
+
+  &.page-exit-done {
+    width: 0.01%;
+  }
+
+  &.is-editmode {
+    left: auto;
+    position: relative;
+    top: auto;
+  }
+}
+
+.o-page__inner {
+  width: 100%;
+}

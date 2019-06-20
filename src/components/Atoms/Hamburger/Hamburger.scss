@@ -1,0 +1,187 @@
+/*  =========================================================================
+    atoms.Hamburger
+========================================================================= */
+
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+/*  Variables
+    ========================================================================= */
+
+$hamburger-spacing: 4px;
+$hamburger-height: 2.5px;
+
+
+@keyframes sonarEffect {
+  0% {
+    transform: scale(1.1) translateY(-50%);
+  }
+
+  20% {
+    transform: scale(1) translateY(-50%);
+  }
+
+  40% {
+    transform: scale(1.1) translateY(-50%);
+  }
+
+  60% {
+    transform: scale(1) translateY(-50%);
+  }
+
+  80% {
+    transform: scale(1.1) translateY(-50%);
+  }
+
+  100% {
+    transform: scale(1) translateY(-50%);
+  }
+}
+
+/*  Module
+    ========================================================================= */
+
+.c-hamburger {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  overflow: visible;
+  padding-top: 20px;
+  position: relative;
+
+  @include blocss-media-query(desk) {
+    margin-left: 20px;
+    padding-right: 70px;
+    padding-top: 0;
+  }
+
+  &:hover {
+    .c-hamburger__button {
+      background-color: $brand-c;
+      border-radius: 0;
+    }
+  }
+
+  @media (hover: none) {
+    &:hover {
+      .c-hamburger__button {
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+/*  Elements
+    ========================================================================= */
+
+.c-hamburger__word {
+  display: none;
+  width: 50px;
+
+  @include blocss-media-query(desk) {
+    display: inline;
+  }
+}
+
+.c-hamburger__button {
+  align-items: center;
+  background-color: $white;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.45s ease-in, border-radius 0.45s ease-in;
+  width: 50px;
+
+  @include blocss-media-query(desk) {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  span {
+    background-color: $black;
+    display: block;
+    height: 2px;
+    transition: transform 0.2s;
+    width: 18px;
+
+    &:first-child {
+      transform: translate3d(0, -4px, 0);
+    }
+
+    &:nth-child(2) {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &:last-child {
+      transform: translate3d(0, 4px, 0);
+    }
+  }
+
+  &.is-active {
+    span {
+      &:first-child {
+        transform: translate3d(0, 3px, 0) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate3d(0, 0, 0) scale(0, 1);
+      }
+
+      &:last-child {
+        transform: translate3d(0, -1px, 0) rotate(-45deg);
+      }
+    }
+  }
+}
+
+
+/*  Theming
+    ========================================================================= */
+
+.t-color--dark {
+  .c-hamburger__button {
+    background-color: $black;
+
+    span {
+      background-color: $white;
+    }
+  }
+}
+
+.t-color--light {
+  .c-hamburger__button {
+    background-color: $white;
+
+    span {
+      background-color: $black;
+    }
+  }
+}
+
+@media (hover: none) {
+  .c-hamburger {
+    &:hover {
+      .c-hamburger__button {
+        .t-color--dark & {
+          background-color: $black;
+        }
+
+        .t-color--light & {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "topBackground": "white",
+  "bottomBackground": "black",
+  "images": [
+    {
+      "guid": 0,
+      "link": {
+        "value": {
+          "href": "/#0/",
+          "text": "Link to page"
+        }
+      },
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    },
+    {
+      "guid": 0,
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    },
+    {
+      "guid": 0,
+      "link": {
+        "value": {
+          "href": "/#2/",
+          "text": "Link to page"
+        }
+      },
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    },
+    {
+      "guid": 0,
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    },
+    {
+      "guid": 0,
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    },
+    {
+      "guid": 0,
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    },
+    {
+      "guid": 0,
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    },
+    {
+      "guid": 0,
+      "src": "http://placehold.it/750x600/333333/888888?w=750&text=750fbl",
+      "alt": "alt text",
+      "srcSet": [
+        {
+          "src": "http://placehold.it/750x600/333333/888888?w=750&text=750l",
+          "width": 750
+        },
+        {
+          "src": "http://placehold.it/1536x1200/333333/888888?w=1536&text=1536l",
+          "width": 1536
+        },
+        {
+          "src": "http://placehold.it/1920x600/333333/888888?w=1920&text=1920l",
+          "width": 1920
+        }
+      ]
+    }
+  ]
+}

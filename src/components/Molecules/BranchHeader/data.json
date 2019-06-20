@@ -1,0 +1,35 @@
+{
+  "theme": "black",
+  "title": {
+    "value": "we\r\nunderstand"
+  },
+  "content": {
+    "value": "<p>Onze bevlogen experts gaan aan de slag met de uitgestippelde strategie en zorgen voor resultaten waar iedereen trots op is. Dit doen we voor opdrachtgevers uit verschillende sectoren zoals <a href='/' title='leisure'>leisure</a>, <a href='/' title='automotive'>automotive</a>, finance, utility en insurance.</p>"
+  },
+  "items": [
+    {
+      "id": "0",
+      "value": {
+        "text": "digital",
+        "href": "http://www.mangrove.com"
+      },
+      "active": true
+    },
+    {
+      "id": "1",
+      "value": {
+        "text": "optimizing results",
+        "href": "http://www.redhotminute.com"
+      },
+      "active": false
+    },
+    {
+      "id": "2",
+      "value": {
+        "text": "customer experience",
+        "href": "http://www.virtual-affairs.com"
+      },
+      "active": false
+    }
+  ]
+}

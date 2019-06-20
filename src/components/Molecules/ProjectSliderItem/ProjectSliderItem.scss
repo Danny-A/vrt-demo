@@ -1,0 +1,74 @@
+/*  =========================================================================
+    Molecules.Case-overview-item
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-project-slider-item {
+  display: flex;
+  flex-direction: column;
+
+  &.is-link {
+    cursor: pointer;
+
+    #{$global-interaction-states} {
+      .c-project-slider-item__img {
+        transform: scale(1.1);
+      }
+
+      .c-project-slider-item__img-wrap {
+        &::after {
+          transform: scale(1.01);
+        }
+      }
+
+      .c-project-slider-item__wrap-icon {
+        opacity: 1;
+        transform: scale(1.25);
+      }
+    }
+  }
+}
+
+.c-project-slider-item__img-wrap {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: blocss-value-to-rem(18px);
+    right: blocss-value-to-rem(18px);
+    bottom: blocss-value-to-rem(18px);
+    left: blocss-value-to-rem(18px);
+    box-shadow: 0 0 0 blocss-value-to-rem(18px) $black;
+    transform: scale(1.11, 1.21);
+    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    pointer-events: none;
+  }
+}
+
+.c-project-slider-item__img {
+  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform-origin: center;
+  object-fit: cover;
+}
+
+.c-project-slider-item__heading {
+  order: 1;
+}
+
+.c-project-slider-item__wrap-icon {
+  position: absolute;
+  bottom: $blocss-space;
+  right: $blocss-space;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform $base-transition-duration-short cubic-bezier(0.165, 0.84, 0.44, 1);
+}

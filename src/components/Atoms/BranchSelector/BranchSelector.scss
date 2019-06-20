@@ -1,0 +1,145 @@
+/*  =========================================================================
+    Atoms.BranchSelector
+    ========================================================================= */
+
+/*  Engine
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+/*  Module
+    ========================================================================= */
+
+.c-branch-selector {
+  //
+}
+
+.c-branch-selector--active {
+  position: relative;
+  z-index: 12;
+}
+
+/*  Elements
+    ========================================================================= */
+
+.c-branch-selector__title {
+  z-index: 11;
+}
+
+.c-branch-selector__button {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: table;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.c-branch-selector__button__text {
+  display: table-cell;
+}
+
+.c-branch-selector__button__icon {
+  display: table-cell;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+.c-branch-selector__button__icon svg {
+  transition: transform $base-transition-duration-short cubic-bezier(0.5, 0, 0, 1);
+
+  .c-branch-selector--active & {
+    transform: rotate(-180deg);
+    transform-origin: center center;
+  }
+}
+
+.c-branch-selector__toggle {
+  color: $brand-b;
+  position: relative;
+  width: auto;
+  z-index: 11;
+
+  &::before {
+    background-color: $brand-b;
+    bottom: -3px;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 3px;
+    overflow: hidden;
+    position: absolute;
+    transform-origin: bottom left;
+    transition: transform $base-transition-duration-short cubic-bezier(0.5, 0, 0, 1);
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &::before {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition-duration: 0.4s;
+    }
+  }
+
+  .c-branch-selector--active & {
+    border-color: transparent;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.c-branch-selector__foldout {
+  color: inherit !important;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity $base-transition-duration-short ease-in;
+  z-index: 10;
+  width: 100%;
+
+  li {
+    line-height: 1;
+  }
+
+  &::before {
+    background-color: rgba($black, 0.7);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+.c-branch-selector__foldout--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.c-branch-selector__branch {
+  color: $brand-b;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.c-branch-selector__branch__icon {
+  visibility: hidden;
+}

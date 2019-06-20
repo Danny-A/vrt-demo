@@ -1,0 +1,385 @@
+/*  =========================================================================
+    Atoms.Button
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Functions/Mixins
+    Functions and/or mixins used in this module
+    ========================================================================= */
+
+/**
+ * Hide the label, so only display a icon
+ * 1. Makes it a perfect square
+ * 2. Calculates the space around the button minus the fixed border-width
+ */
+@mixin c-button--hide-label {
+  padding-left: calc(#{blocss-value-to-em(10px)} - #{1px}); /* [2] */
+  padding-right: calc(#{blocss-value-to-em(10px)} - #{1px}); /* [2] */
+
+  .c-button__label {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .c-button__inner {
+    justify-content: center;
+    width: blocss-value-to-em($blocss-space);
+    height: blocss-value-to-em($blocss-space);
+  }
+
+  .c-button__wrap-icon {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &,
+  #{$global-interaction-states} {
+    .c-button__wrap-icon {
+      transform: none;
+    }
+  }
+}
+
+
+
+/*  Module
+    Core module
+    ========================================================================= */
+
+/**
+ * 1. set the lineheight to 0 because we want to negate the baseline space.
+ *      This allows us vertical align a lot of things perfectly into the center
+ * 2. Calculates the space around the button minus the fixed border-width
+ */
+%c-button,
+.c-button {
+  appearance: none;
+  background-color: $white;
+  border: 1px solid $white;
+  border-radius: blocss-value-to-em(27px);
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: $font-weight-book;
+  line-height: 0; /* [1] */
+  margin: 0;
+  padding-top: calc(#{blocss-value-to-em(10px)} - #{1px}); /* [2] */
+  padding-bottom: calc(#{blocss-value-to-em(10px)} - #{1px}); /* [2] */
+  padding-right: calc(#{blocss-value-to-em(34px)} - #{1px}); /* [2] */
+  padding-left: calc(#{blocss-value-to-em(34px)} - #{1px}); /* [2] */
+  position: relative;
+  text-decoration: none;
+  transition-property: color, background-color, border-radius, border-color;
+  transition-duration: $base-transition-duration-short;
+  transition-timing-function: 0.45s;
+
+  #{$global-interaction-states} {
+    background-color: $brand-c;
+    border-color: $brand-c;
+    border-radius: 0;
+    color: $black;
+    text-decoration: none;
+    outline: none;
+  }
+
+  @media (hover: none) {
+    #{$global-interaction-states} {
+      background-color: $white;
+      border-color: $white;
+      border-radius: blocss-value-to-em(27px);
+    }
+  }
+}
+
+
+
+/*  Elements
+    ========================================================================= */
+
+/**
+ * 1. Reset that line-height again
+ */
+.c-button__inner {
+  display: inline-flex;
+  align-items: center;
+  line-height: $blocss-line-height-ratio; /* [1] */
+}
+
+.c-button__label {
+  display: flex;
+}
+
+.c-button__wrap-icon {
+  display: flex;
+  margin-left: $blocss-space;
+  text-decoration: none;
+  transition: transform $base-transition-duration-short $base-timing-function;
+
+  .c-button--animate-icon-on-hover:hover & {
+    transform: translateX(10px);
+  }
+
+  .c-button--animate-icon-on-hover.c-button--reversed:hover & {
+    transform: translateX(-10px);
+  }
+}
+
+
+
+/*  Modifiers
+    ========================================================================= */
+
+/**
+ * Reverse the icon from right to the left
+ */
+.c-button--reversed {
+  .c-button__inner {
+    flex-direction: row-reverse;
+  }
+
+  .c-button__wrap-icon {
+    margin-left: 0;
+    margin-right: $blocss-space * 0.5;
+  }
+}
+
+/**
+ * Hide the label, so only display a icon
+ */
+.c-button--hide-label {
+  @include c-button--hide-label;
+}
+
+/**
+ * Secondary button
+ */
+.c-button--secondary {
+  border-color: $white;
+  background-color: $black;
+  color: $white;
+  opacity: 0.5;
+  transition-property: background-color, border-radius, border, color, opacity;
+
+  #{$global-interaction-states} {
+    border-color: $white;
+    background-color: $black;
+    color: $white;
+    opacity: 1;
+  }
+
+  @media (hover: none) {
+    #{$global-interaction-states} {
+      opacity: 0.5;
+    }
+  }
+
+  &.is-active {
+    border-color: $white;
+    background-color: $white;
+    color: $black;
+    opacity: 1;
+  }
+}
+
+/**
+ * Tertiary button, in case overview
+ */
+.c-button--tertiary {
+  border-color: $brand-c;
+  background-color: $brand-c;
+  color: $black;
+}
+
+.c-button--form-sent {
+  border-color: $brand-b;
+  background-color: $brand-b;
+  color: $black;
+  cursor: default;
+
+  #{$global-interaction-states} {
+    border-radius: inherit;
+  }
+}
+
+/**
+ * Clean button, no border or background
+ */
+.c-button--clean {
+  background-color: transparent;
+  font-weight: $font-weight-book;
+  padding: 0;
+
+  .c-button__inner {
+    width: auto;
+    height: auto;
+  }
+
+  &,
+  #{$global-interaction-states} {
+    color: $white;
+    border: none;
+  }
+
+  #{$global-interaction-states} {
+    background-color: transparent;
+  }
+}
+
+
+
+.c-button--wide\@palm {
+  width: 100%;
+
+  .c-button__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+/*  Button states
+    ========================================================================= */
+
+.c-button {
+  &:disabled,
+  &.is-disabled {
+    &,
+    #{$global-interaction-states} {
+      background-color: $gray-b !important;
+      border-color: $gray-b !important;
+      color: $gray-c !important;
+      cursor: not-allowed;
+
+      .c-button__wrap-icon {
+        transform: none !important;
+      }
+
+      &.is-loading {
+        cursor: wait;
+
+        .c-button__wrap-icon {
+          transform-origin: center;
+          animation: rotate 1s linear infinite;
+        }
+      }
+    }
+  }
+
+  &.c-button--clean {
+    &:disabled,
+    &.is-disabled {
+      &,
+      #{$global-interaction-states} {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+
+
+/*  Theming
+    ========================================================================= */
+
+.t-color--light {
+  .c-button {
+    color: $black;
+
+    #{$global-interaction-states} {
+      color: $black;
+    }
+  }
+
+  .c-button--secondary {
+    color: $white;
+
+    #{$global-interaction-states} {
+      color: $white;
+    }
+
+    &.is-active {
+      color: $black;
+      opacity: 1;
+    }
+  }
+
+  .c-button--tertiary {
+    color: $black;
+  }
+
+  .c-button--clean {
+    color: $white;
+
+    #{$global-interaction-states} {
+      color: $white;
+    }
+  }
+}
+
+.t-color--dark {
+  .c-button {
+    background-color: $black;
+    border-color: $black;
+    color: $white;
+
+    #{$global-interaction-states} {
+      background-color: $brand-c;
+      border-color: $brand-c;
+      color: $black;
+    }
+
+    &:disabled,
+    &.is-disabled {
+      color: $gray-g !important;
+    }
+  }
+
+  .c-button--form-sent {
+    border-color: $brand-b;
+    background-color: $brand-b;
+    color: $black;
+
+    #{$global-interaction-states} {
+      border-color: $brand-b;
+      background-color: $brand-b;
+      color: $black;
+      border-radius: 27px;
+    }
+  }
+
+  .c-button--clean {
+    background-color: transparent;
+    color: $black;
+
+    #{$global-interaction-states} {
+      background-color: transparent;
+      color: $brand-c;
+    }
+  }
+}
+
+
+
+/*  Responsive
+    ========================================================================= */
+
+@include blocss-media-query(lap) {
+  .c-button--wide\@palm {
+    width: auto;
+  }
+}

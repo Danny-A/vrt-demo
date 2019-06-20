@@ -1,0 +1,13 @@
+/*  =========================================================================
+    objects.blocss-layout-additions
+    ========================================================================= */
+
+.o-layout--nowrap {
+  flex-wrap: nowrap;
+}
+
+.o-layout--reverse\@desk {
+  @include blocss-media-query(desk) {
+    flex-direction: row-reverse;
+  }
+}

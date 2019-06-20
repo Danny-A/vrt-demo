@@ -1,0 +1,74 @@
+/*  =========================================================================
+    Atoms.Inview Animation
+    ========================================================================= */
+
+/*  Engine
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-inview {
+  opacity: 0;
+  transform: translateY(50px) skewY(-2.5deg);
+  transition-property: opacity, transform;
+  transition-duration: 0.59s;
+  transition-timing-function: cubic-bezier(0.48, 0, 0.12, 1);
+
+  @include blocss-media-query(desk) {
+    transform: translateY(80px) skewY(-2.5deg);
+  }
+
+  &.was-inview {
+    opacity: 1;
+    transform: translateY(0) skewY(0);
+  }
+
+  &.is-out {
+    transform: translateY(-40px) skewY(-2.5deg);
+    opacity: 0;
+    transition-duration: 0.59s;
+
+    @include blocss-media-query(desk) {
+      transform: translateY(-80px) skewY(-2.5deg);
+    }
+  }
+
+  &.no-transform {
+    transition: none;
+    transform: none;
+  }
+}
+
+/*  Modifier
+    ========================================================================= */
+
+.c-inview--long-distance {
+  transform: translateY(50px);
+  transition-duration: 0.75s;
+
+  @include blocss-media-query(desk) {
+    transform: translateY(100px);
+  }
+}
+
+.c-inview--horizontal {
+  transform: translateX(50px);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+
+  @include blocss-media-query(desk) {
+    transform: translateX(100px);
+  }
+
+  &.was-inview {
+    transform: translateX(0);
+  }
+}
+
+.c-inview--delay {
+  transition-delay: 0.3s;
+}

@@ -1,0 +1,40 @@
+/*  =========================================================================
+  Molecules.Filter
+  ========================================================================= */
+
+/*  Engine
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+/*  Module
+    ========================================================================= */
+
+/*  Elements
+    ========================================================================= */
+
+.c-list-filter__title {
+  color: $white;
+  font-size: $micro;
+}
+
+.c-list-filter__html-label {
+  cursor: pointer;
+}
+
+.c-list-filter__label {
+  color: $gray-d;
+  font-size: $micro;
+  transition: color $base-transition-duration-short linear;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.c-list-filter__input {
+  &:checked + .c-list-filter__label {
+    color: $brand-c;
+    font-weight: $font-weight-bold;
+  }
+}

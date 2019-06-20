@@ -1,0 +1,33 @@
+{
+  "theme": "white",
+  "collapseTop": false,
+  "collapseBottom": false,
+  "heading": {
+	"value": "de afgelopen maanden hebben"
+  },
+  "content": {
+    "value": "<p>De optimale klantervaring van de uiteenlopende doelgroepen staat centraal. Van zakelijk dienstverleners wordt vandaag de dag veel verwacht. Klanten worden veeleisender. Ze willen sneller, laagdrempeliger en meer op maat worden bediend.</p>"
+  },
+  "link": {
+    "value": {
+      "text": "Twitter",
+      "href": "/#/"
+    }
+  },
+  "authorName": {
+    "value": "Peter Smith"
+  },
+  "authorTitle": {
+    "value": "UX Designer"
+  },
+  "authorPhoto": {
+    "src": "https://source.unsplash.com/collection/2183135/150x150",
+    "alt": "lion",
+    "srcSet": [
+      {
+        "src": "https://source.unsplash.com/collection/2183135/150x150",
+        "width": 90
+      }
+    ]
+  }
+}

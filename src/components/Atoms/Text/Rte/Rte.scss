@@ -1,0 +1,196 @@
+/*  =========================================================================
+    atoms.Rte
+    ========================================================================= */
+
+
+/*  Engine
+    Includes the projects engine file, contains all variables,
+    functions and mixins with our project specific settings.
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-rte {
+  white-space: normal;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: $blocss-space;
+    padding-top: $blocss-space;
+
+    @include blocss-media-query(desk) {
+      margin-bottom: $blocss-space-large;
+      padding-top: $blocss-space-large;
+    }
+  }
+
+  a {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    text-decoration: none;
+
+    @include blocss-media-query(desk) {
+      background: none;
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        background-color: $black;
+        bottom: 0;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 2px;
+        overflow: hidden;
+        position: absolute;
+        transform: scaleX(100%);
+        transform-origin: left;
+        transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    }
+
+    #{$global-interaction-states} {
+      text-decoration: none;
+
+      @include blocss-media-query(desk) {
+        &::before {
+          transform: scaleX(0);
+          transform-origin: right;
+        }
+      }
+    }
+  }
+
+  .list-checkmarks {
+    margin-left: 0;
+
+    li {
+      list-style: none;
+      padding-left: 35px;
+      position: relative;
+
+      &::before {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4gIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik03LjUsMCBDMy4zNDIzOTEzLDAgMCwzLjM0MjM5MTMgMCw3LjUgQzAsMTEuNjI1IDMuMzU4Njk1NjUsMTUgNy41LDE1IEMxMS42NDEzMDQzLDE1IDE1LDExLjYyNSAxNSw3LjUgQzE1LDMuMzQyMzkxMyAxMS42NTc2MDg3LDAgNy41LDAgWiBNMTEuNTEwODY5Niw1LjYwODY5NTY1IEw2LjMwOTc4MjYxLDEwLjc5MzQ3ODMgTDMuNDA3NjA4Nyw3Ljg5MTMwNDM1IEw0LjQwMjE3MzkxLDYuOTI5MzQ3ODMgTDYuMzI2MDg2OTYsOC44NTMyNjA4NyBMMTAuNjE0MTMwNCw0LjU2NTIxNzM5IEwxMS42MDg2OTU3LDUuNTU5NzgyNjEgTDExLjUxMDg2OTYsNS42MDg2OTU2NSBaIi8+PC9zdmc+');
+        content: '';
+        height: 15px;
+        left: 0;
+        position: absolute;
+        top: 7.5px;
+        width: 15px;
+      }
+    }
+  }
+
+  img {
+    height: auto !important;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &,
+    th,
+    td {
+      border: 1px solid $gray-a;
+    }
+
+    th,
+    td {
+      padding: $blocss-space-tiny;
+    }
+  }
+}
+
+
+/*  Modifiers
+    ========================================================================= */
+
+.c-rte--intro {
+  @include text-crop($line-height: 1.667);
+}
+
+.c-rte--description {
+  color: $gray-d;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.c-rte--payoff {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: $font-weight-bold;
+  position: relative;
+
+  @include blocss-media-query(desk) {
+    font-size: $alpha;
+  }
+}
+
+/*  Theming
+    ========================================================================= */
+
+.t-color--light {
+  .c-rte {
+    a {
+      color: $white;
+
+      &::before {
+        background-color: $white;
+      }
+
+      #{$global-interaction-states} {
+        color: $white;
+      }
+    }
+
+    table {
+      thead {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}
+
+.t-color--dark {
+  .c-rte {
+    a {
+      color: $black;
+
+      &::before {
+        background-color: $black;
+      }
+
+      #{$global-interaction-states} {
+        color: $black;
+      }
+    }
+
+    .list-checkmarks {
+      li {
+        &::before {
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4gIDxwYXRoIGQ9Ik03LjUsMCBDMy4zNDIzOTEzLDAgMCwzLjM0MjM5MTMgMCw3LjUgQzAsMTEuNjI1IDMuMzU4Njk1NjUsMTUgNy41LDE1IEMxMS42NDEzMDQzLDE1IDE1LDExLjYyNSAxNSw3LjUgQzE1LDMuMzQyMzkxMyAxMS42NTc2MDg3LDAgNy41LDAgWiBNMTEuNTEwODY5Niw1LjYwODY5NTY1IEw2LjMwOTc4MjYxLDEwLjc5MzQ3ODMgTDMuNDA3NjA4Nyw3Ljg5MTMwNDM1IEw0LjQwMjE3MzkxLDYuOTI5MzQ3ODMgTDYuMzI2MDg2OTYsOC44NTMyNjA4NyBMMTAuNjE0MTMwNCw0LjU2NTIxNzM5IEwxMS42MDg2OTU3LDUuNTU5NzgyNjEgTDExLjUxMDg2OTYsNS42MDg2OTU2NSBaIi8+PC9zdmc+');
+        }
+      }
+    }
+
+    table {
+      thead {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+/*  =========================================================================
+    Utilities.Typography.Sizes
+    Describes font sizing.
+    ========================================================================= */
+
+/*  Sizes
+    ========================================================================= */
+
+h1 {
+  font-size: $beta;
+
+  @include blocss-media-query(desk) {
+    font-size: $alpha;
+  }
+}
+
+h2 {
+  font-size: $gamma;
+
+  @include blocss-media-query(desk) {
+    line-height: 1.111;
+    font-size: $beta;
+  }
+}
+
+h3 {
+  font-size: $delta;
+
+  @include blocss-media-query(desk) {
+    font-size: $gamma;
+  }
+}
+
+h4 {
+  font-size: $epsilon;
+
+  @include blocss-media-query(desk) {
+    font-size: $delta;
+  }
+}
+
+h5 {
+  font-size: $milli;
+
+  @include blocss-media-query(desk) {
+    font-size: $epsilon;
+  }
+}
+
+h6 {
+  font-size: $normalis;
+}
+
+
+
+/*  Overrides
+    ========================================================================= */
+
+.u-mega {
+  font-size: $alpha !important;
+
+  @include text-crop($line-height: 1);
+
+  @include blocss-media-query(desk) {
+    font-size: $mega !important;
+  }
+}
+
+.u-alpha {
+  font-size: $beta !important;
+
+  @include blocss-media-query(desk) {
+    font-size: $alpha !important;
+  }
+}
+
+.u-beta {
+  font-size: $gamma !important;
+
+  @include blocss-media-query(desk) {
+    line-height: 1.111;
+    font-size: $beta !important;
+  }
+}
+
+.u-gamma {
+  font-size: $delta !important;
+
+  @include blocss-media-query(desk) {
+    font-size: $gamma !important;
+  }
+}
+
+.u-delta {
+  font-size: $milli !important;
+
+  @include blocss-media-query(desk) {
+    font-size: $delta !important;
+  }
+}
+
+.u-epsilon {
+  font-size: $milli;
+
+  @include blocss-media-query(desk) {
+    font-size: $epsilon !important;
+  }
+}
+
+.u-normalis {
+  font-size: $normalis !important;
+}
+
+.u-milli {
+  font-size: $milli !important;
+  line-height: 1.3;
+}
+
+.u-micro {
+  font-size: $micro !important;
+}
+
+.u-nano {
+  font-size: $nano !important;
+}

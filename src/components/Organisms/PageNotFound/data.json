@@ -1,0 +1,8 @@
+{
+  "status": {
+    "value": "404"
+  },
+  "content": {
+    "value": "oops, where are you? this page does not exist. are you looking for <a href='/nl/cases'>cases</a>, <a href='/nl/updates'>updates</a> or the <a href='/nl/over-ons'>about us</a> page?"
+  }
+}

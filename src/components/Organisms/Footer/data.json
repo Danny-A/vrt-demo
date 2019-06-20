@@ -1,0 +1,113 @@
+{
+  "heading": {
+    "value": "Hoe wij samenwerken? Bekijk onze <a href='/' title='filosofie'>filosofie</a><br/> Ben je overtuigd? Neem <a href='/' title='contact'>contact</a> op<br/> Wil je meer? Bekijk belangrijke <a href='/' title='thema's>thema's</a>"
+  },
+  "linkLocations": {
+    "field": {
+      "value": {
+        "text": "Onze locaties",
+        "href": "/contact/"
+      }
+    }
+  },
+  "metaNavigationLeft": [
+    {
+      "guid": "0",
+      "field": {
+        "value": {
+          "text": "we are you",
+          "href": "/"
+        }
+      }
+    }
+  ],
+  "metaNavigationRight": [
+    {
+      "guid": "0",
+      "field": {
+        "value": {
+          "text": "contact",
+          "href": "/blog/"
+        }
+      }
+    },
+    {
+      "guid": "1",
+      "field": {
+        "value": {
+          "text": "vacatures",
+          "href": "/vacatures/"
+        }
+      }
+    },
+    {
+      "guid": "2",
+      "field": {
+        "value": {
+          "text": "nieuws & blog",
+          "href": "/blog/"
+        }
+      }
+    },
+    {
+      "guid": "3",
+      "field": {
+        "value": {
+          "text": "cookies",
+          "href": "/cookies/"
+        }
+      }
+    }
+  ],
+  "socialItems": [
+    {
+      "guid": "0",
+      "icon": "icon-facebook",
+      "target": "_blank",
+      "field": {
+        "value": {
+          "text": "Facebook",
+          "href": "https://www.facebook.com/",
+          "target": "_blank"
+        }
+      }
+    },
+    {
+      "guid": "1",
+      "icon" : "icon-linkedin",
+      "target": "_blank",
+      "field": {
+        "value": {
+          "text": "LinkedIn",
+          "href": "/#/",
+          "target": "_blank"
+        }
+      }
+    },
+    {
+      "guid": "2",
+      "icon": "icon-twitter",
+      "target": "_blank",
+      "field": {
+        "value": {
+          "text": "Twitter",
+          "href": "/#/",
+          "target": "_blank"
+        }
+      }
+    },
+    {
+      "guid": "3",
+      "icon": "icon-instagram",
+      "title": "Instagram",
+      "target": "_blank",
+      "field": {
+        "value": {
+          "text": "Instagram",
+          "href": "/#/",
+          "target": "_blank"
+        }
+      }
+    }
+  ]
+}

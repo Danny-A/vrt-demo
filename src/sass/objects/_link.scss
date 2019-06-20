@@ -1,0 +1,36 @@
+/*  =========================================================================
+    Objects.Link
+    ========================================================================= */
+
+a {
+  outline: none;
+  text-decoration: none;
+  text-decoration-skip: auto;
+  transition: color $base-transition-duration-short ease;
+
+  // todo: make visual distinction
+  &,
+  #{$global-interaction-states} {
+    color: $white;
+  }
+}
+
+.t-color--dark {
+  a {
+    color: $black;
+
+    #{$global-interaction-states} {
+      color: $gray-d;
+    }
+  }
+}
+
+.t-color--light {
+  a {
+    color: $white;
+
+    #{$global-interaction-states} {
+      color: $brand-c;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+/*  =========================================================================
+    vars
+    This file contains all global variables.
+    ========================================================================= */
+
+/*  =========================================================================
+    $OVERRIDES
+    Any variables you find set in Blocss that you do not wish to keep, simply
+    redefine here. This means that if Blocss sets your
+    `$blocss-base-font-size` at 16px and you wish it to be 14px, simply
+    redeclare that variable in this file.
+    ========================================================================= */
+
+$blocss-base-font-size: 16px;
+$blocss-base-line-height: 28px;
+$blocss-base-font-size-desk: 18px;
+$blocss-base-line-height-desk: 30px;
+$blocss-line-height-ratio-desk: $blocss-base-line-height-desk/$blocss-base-font-size-desk !default;
+
+
+
+/*  Responsive
+    Define your breakpoints. The first value is the appendix that shall be used
+    for your classes (e.g. `.classname@lap`), the second value is the media
+    query that the breakpoint fires at.
+    ========================================================================= */
+
+$blocss-breakpoints: (
+  'palm': '(max-width: 36.1875em)', // 579px
+  'lap': '(min-width: 36.25em)', // 580px
+  'desk': '(min-width: 61.25em)', // 980px
+  'wall': '(min-width: 76.25em)', // 1220px
+  'dam': '(min-width: 90em)', // 1440px
+) !default;
+
+$blocss-fractions: 12;
+$blocss-breakpoint-has-fractions: ('lap', 'desk');
+$blocss-breakpoint-has-layout-fit: ('lap', 'desk');
+$blocss-breakpoint-has-layout-fill: ('lap', 'desk');
+$blocss-breakpoint-has-visually-hidden: ('palm', 'lap', 'desk');
+$blocss-breakpoint-has-hidden: ('palm', 'lap', 'desk');
+
+
+
+/*  =========================================================================
+    $CUSTOM
+    Place any of your own variables that sit on top of Blocss here.
+    Please use the `!default` flag because variables defined here can be
+    overwritten by the project
+    ========================================================================= */
+
+$font-family-primary: 'Relative', sans-serif !default;
+$font-weight-book: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+
+
+
+/*  Colors
+    ========================================================================= */
+
+// Brand
+$brand-a: #f5d9ff;
+$brand-b: #26ffc9;
+$brand-c: #ffc926;
+
+// Grayscale
+$black: #000 !default;
+$white: #fff !default;
+$gray-a: #fafafa !default;
+$gray-b: #f3f3f3 !default;
+$gray-c: #333 !default;
+$gray-d: #8a8a8a !default;
+$gray-e: #161616 !default;
+$gray-f: #555 !default;
+$gray-g: #e3e3e3 !default;
+
+$error-a: #ff6a7a;
+
+/*  Sizes
+    ========================================================================= */
+
+$normalis: $blocss-base-font-size !default;
+$mega: 72px !default;
+
+$alpha: 48px !default; // corresponds with an <h1> size on large screens
+$beta: 36px !default;
+$gamma: 28px !default;
+$delta: 24px !default;
+$epsilon: 21px !default;
+$milli: 18px !default;
+$micro: 16px !default;
+$nano: 12px !default;
+
+
+
+/*  Animations
+    ========================================================================= */
+
+$base-timing-function: cubic-bezier(0.55, 0, 0.1, 1) !default; // Google swift bezier
+$base-transition-duration: 300ms !default;
+$base-transition-duration-short: 300ms !default;
+
+
+
+/*  Global hover/active etc. states
+    ========================================================================= */
+
+$global-interaction-states: '&:hover, &:active, &:focus' !default;
+
+
+
+/*  Blocss Flexembed ratios
+    ========================================================================= */
+
+$blocss-flexembed-ratios: (
+  (5:4),
+  (16:9),
+);

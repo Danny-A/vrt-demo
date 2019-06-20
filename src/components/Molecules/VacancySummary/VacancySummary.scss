@@ -1,0 +1,71 @@
+/*  =========================================================================
+    Molecules.VacancySummary
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-vacancy-summary {
+  display: block;
+  border-top: 1px solid $gray-c;
+  overflow: hidden;
+
+  &:last-child {
+    border-bottom: 1px solid $gray-c;
+  }
+
+  &:hover {
+    .c-vacancy-summary__inner {
+      color: $white;
+
+      @include blocss-media-query(desk) {
+        transform: translateX(38px);
+        transition: transform 0.4s cubic-bezier(0.6, 0.04, 0.98, 0.34);
+      }
+    }
+
+    .c-vacancy-summary__icon-left {
+      @include blocss-media-query(desk) {
+        opacity: 1;
+      }
+    }
+
+    .c-vacancy-summary__icon-right {
+      @include blocss-media-query(desk) {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+/*  Elements
+    ========================================================================= */
+
+.c-vacancy-summary__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  transition: transform 0.4s ease;
+}
+
+.c-vacancy-summary__title {
+  align-items: center;
+  display: flex;
+  transform: translateX(-76px);
+}
+
+.c-vacancy-summary__icon-left {
+  margin-right: $blocss-space;
+  opacity: 0;
+  transition: opacity 0.4s ease-in 0.25s;
+}
+
+.c-vacancy-summary__icon-right {
+  transition: opacity 0.4s ease-out;
+}

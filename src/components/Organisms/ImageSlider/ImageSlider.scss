@@ -1,0 +1,99 @@
+/*  =========================================================================
+    Organisms.ImageSlider
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine.scss';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-image-slider {
+  // empty as reference
+}
+
+/**
+Override Swiper's css
+ */
+.c-image-slider__swiper-container {
+  &::before,
+  &::after {
+    @include blocss-media-query(dam) {
+      bottom: 0;
+      content: '';
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  &::before {
+    @include blocss-media-query(dam) {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+      left: -$blocss-space-large;
+      width: $blocss-space-large;
+    }
+  }
+
+  &::after {
+    @include blocss-media-query(dam) {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+      right: -$blocss-space-large;
+      width: $blocss-space-large;
+    }
+  }
+}
+
+/**
+Override Swiper's css, so slides are displayed in a regular grid
+1. After Swiper initialises, restore it's css
+ */
+.c-image-slider__swiper-wrapper {
+  box-sizing: border-box;
+  list-style: none;
+  overflow: auto;
+
+  &.is-initialised { /* [1] */
+    margin: 0;
+    box-sizing: content-box;
+    overflow: visible;
+  }
+}
+
+.c-image-slider__background {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 2fr 90px * 2;
+
+  @include blocss-media-query(lap) {
+    grid-template-rows: 2fr 60px * 5;
+  }
+
+  @include blocss-media-query(desk) {
+    grid-template-rows: 2fr 100px * 5;
+  }
+}
+
+.c-image-slider__background-top {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.c-image-slider__background-bottom {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+
+  .o-retain {
+    width: 100%;
+  }
+}
+
+.c-image-slider__background-bottom.t-color--light {
+  .c-button--clean {
+    color: #fff;
+  }
+}
