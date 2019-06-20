@@ -33,7 +33,7 @@
     "bootstrap:connected": "node scripts/bootstrap.js",
     "bootstrap:disconnected": "node scripts/bootstrap.js --disconnected",
     "graphql:update": "node -r babel-register ./scripts/update-graphql-fragment-data.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "npm run snapshot",
     "storybook": "start-storybook -p 9001",
     "proxy": "npm-run-all bootstrap:connected start:react start:proxy start:watch-components",
     "snapshot": "build-storybook && percy-storybook --widths=320,1280"
