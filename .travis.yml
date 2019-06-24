@@ -4,8 +4,3 @@ node_js:
 git:
   depth: 3
 cache: yarn
-jobs:
-  include:
-    - stage: "Test"
-      script: npm run test
-      name: "Visual Tests"
