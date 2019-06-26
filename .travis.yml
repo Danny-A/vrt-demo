@@ -1,11 +1,6 @@
 language: node_js
 node_js:
   - "10.14.1"
-cache:
-  directories:
-  - node_modules
-jobs:
-  include:
-    - stage: "Test"
-      script: npm run test
-      name: "Visual Tests"
+git:
+  depth: 3
+cache: yarn
