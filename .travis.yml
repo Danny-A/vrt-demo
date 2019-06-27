@@ -6,12 +6,10 @@ git:
 cache: yarn
 jobs:
   include:
-    - stage: "Tests"
+    - stage: "Continious integration"
       name: "Unit Tests"
-      script: yarn test
-    - stage: "Build"
+      - script: yarn test
       name: "Build StoryBook"
-      script: yarn build-storybook
-    - stage: "Visual testing"
+      - script: yarn build-storybook
       name: "Create snapshots"
-      script: yarn snapshot
+      - script: yarn snapshot
