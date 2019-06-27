@@ -24,6 +24,7 @@
     "jss": "jss",
     "start": "scjss-verify-setup && npm-run-all --serial bootstrap:connected start:react start:watch-components",
     "build": "CI=true npm-run-all --serial bootstrap:connected build:client build:server",
+    "test": "echo \"Error: no test specified\"",
     "scaffold": "node scripts/scaffold-component.js",
     "start:react": "node scripts/start.js",
     "start:proxy": "node scripts/disconnected-mode-proxy.js",
@@ -34,7 +35,8 @@
     "bootstrap:disconnected": "node scripts/bootstrap.js --disconnected",
     "graphql:update": "node -r babel-register ./scripts/update-graphql-fragment-data.js",
     "storybook": "start-storybook -p 9001",
-    "test": "build-storybook && percy-storybook --widths=320,1280",
+    "build-storybook": "build-storybook",
+    "snapshot": "percy-storybook --widths=320,1280",
     "proxy": "npm-run-all bootstrap:connected start:react start:proxy start:watch-components"
   },
   "browserslist": [
