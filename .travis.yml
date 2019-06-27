@@ -4,3 +4,14 @@ node_js:
 git:
   depth: 3
 cache: yarn
+jobs:
+  include:
+    - stage: "Tests"
+      name: "Unit Tests"
+      script: yarn test
+    - stage: "Build"
+      name: "Build StoryBook"
+      script: yarn build-storybook
+    - stage: "Visual testing"
+      name: "Create snapshots"
+      script: yarn snapshot
