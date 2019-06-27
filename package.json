@@ -24,7 +24,7 @@
     "jss": "jss",
     "start": "scjss-verify-setup && npm-run-all --serial bootstrap:connected start:react start:watch-components",
     "build": "CI=true npm-run-all --serial bootstrap:connected build:client build:server",
-    "test": "build-storybook percy-storybook --widths=320,1280",
+    "test": "build-storybook && percy-storybook --widths=320,1280",
     "scaffold": "node scripts/scaffold-component.js",
     "start:react": "node scripts/start.js",
     "start:proxy": "node scripts/disconnected-mode-proxy.js",
