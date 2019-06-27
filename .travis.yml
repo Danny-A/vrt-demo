@@ -8,8 +8,8 @@ jobs:
   include:
     - stage: "Continious integration"
       name: "Unit Tests"
-      - script: yarn test
+      script: yarn test
       name: "Build StoryBook"
-      - script: yarn build-storybook
+      script: yarn build-storybook
       name: "Create snapshots"
-      - script: yarn snapshot
+      script: yarn snapshot
